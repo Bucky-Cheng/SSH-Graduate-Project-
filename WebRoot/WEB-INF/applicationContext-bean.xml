@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    
+    <!-- 启用注解 -->
+    <context:annotation-config />
+    
+	<!-- 得到UsersDao对象 -->
+	<bean id="loginDao" class="com.ssh.dao.loginDao" autowire="byType" />
+	<bean id="AD_loginDao" class="com.ssh.dao.AD_loginDao" autowire="byType" />
+	<bean id="educationTableDao" class="com.ssh.dao.educationTableDao" autowire="byType" />
+	<bean id="administorDao" class="com.ssh.dao.administorDao" autowire="byType" />
+	<bean id="RowcolDao" class="com.ssh.dao.RowcolDao" autowire="byType" />
+	<bean id="EduScoreDao" class="com.ssh.dao.EduScoreDao" autowire="byType" />
+	<bean id="TeacherFileDao" class="com.ssh.dao.TeacherFileDao" autowire="byType" />
+	<bean id="AutoSelectionsDao" class="com.ssh.dao.AutoSelectionsDao" autowire="byType" />
+	<bean id="TeacherMDao" class="com.ssh.dao.TeacherMDao" autowire="byType" />
+	<bean id="ManagerInfoDao" class="com.ssh.dao.ManagerInfoDao" autowire="byType" />
+	<bean id="ChartDao" class="com.ssh.dao.ChartDao" autowire="byType" />
+	<bean id="NoticeTableDao" class="com.ssh.dao.NoticeTableDao" autowire="byType" />
+	<bean id="DeclineDao" class="com.ssh.dao.DeclineDao" autowire="byType" />
+	<bean id="ApproveDao" class="com.ssh.dao.ApproveDao" autowire="byType" />
+	<bean id="researchTableDao" class="com.ssh.dao.researchTableDao" autowire="byType" />
+	<bean id="RowcolReaDao" class="com.ssh.dao.RowcolReaDao" autowire="byType" />
+	<bean id="ReaScoreDao" class="com.ssh.dao.ReaScoreDao" autowire="byType" />
+	<bean id="SerScoreDao" class="com.ssh.dao.SerScoreDao" autowire="byType" />
+	<bean id="serveTableDao" class="com.ssh.dao.serveTableDao" autowire="byType" />
+	<bean id="RowcolSerDao" class="com.ssh.dao.RowcolSerDao" autowire="byType" />
+	<bean id="assistantTableDao" class="com.ssh.dao.assistantTableDao" autowire="byType" />
+	<bean id="AssScoreDao" class="com.ssh.dao.AssScoreDao" autowire="byType" />
+	<bean id="RowcolAssDao" class="com.ssh.dao.RowcolAssDao" autowire="byType" />
+	<bean id="QualityDao" class="com.ssh.dao.QualityDao" autowire="byType" />
+	<bean id="EvaluateNumDao" class="com.ssh.dao.EvaluateNumDao" autowire="byType" />
+	<bean id="ScoreresultDao" class="com.ssh.dao.ScoreresultDao" autowire="byType" />
+	<bean id="TeacherQSDao" class="com.ssh.dao.TeacherQSDao" autowire="byType" />
+	<bean id="EButtonDao" class="com.ssh.dao.EButtonDao" autowire="byType" />
+</beans>

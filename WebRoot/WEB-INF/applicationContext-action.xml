@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    
+    <!-- 启用注解 -->
+    <context:annotation-config />
+    
+	<!-- 得到LoginAction的对象 -->
+	<bean id="loginAction" class="com.ssh.action.Login" autowire="byType" scope="prototype"/>
+    <bean id="getEducationAction" class="com.ssh.action.getEducationTable" autowire="byType"/>
+    <bean id="CEAction" class="com.ssh.action.changeEduAction" autowire="byType"/>
+    <bean id="educationC" class="com.ssh.action.RowcolAction" autowire="byType"/>
+    <bean id="AjaxAction" class="com.ssh.action.AjaxAction" autowire="byType"/>
+    <bean id="newEduAction" class="com.ssh.action.newEduAction" autowire="byType"/>
+    <bean id="TeacherAction" class="com.ssh.action.TeacherAction" autowire="byType"/>
+    <bean id="FileUpload" class="com.ssh.action.FileUpload" autowire="byType"/>
+    <bean id="DocumentShow" class="com.ssh.action.DocumentShow" autowire="byType"/>
+    <bean id="DocumentShowAd" class="com.ssh.action.DocumentShowAd" autowire="byType"/>
+    <bean id="FileDownload" class="com.ssh.action.FileDownload" autowire="byType"/>
+    <bean id="AttachmentDownload" class="com.ssh.action.AttachmentDownload" autowire="byType"/>
+    <bean id="ExcelAction" class="com.ssh.action.ExcelAction" autowire="byType"/>
+    <bean id="EduUD" class="com.ssh.action.EduUD" autowire="byType"/>
+    <bean id="TeacherM" class="com.ssh.action.TeacherM" autowire="byType"/>
+    <bean id="InfoAction" class="com.ssh.action.InfoAction" autowire="byType"/>
+    <bean id="ManagerAction" class="com.ssh.action.ManagerAction" autowire="byType"/>
+    <bean id="ManagerShow" class="com.ssh.action.ManagerShow" autowire="byType"/>
+    <bean id="ChartAction" class="com.ssh.action.ChartAction" autowire="byType"/>
+    <bean id="NoticeAction" class="com.ssh.action.NoticeAction" autowire="byType"/>
+    <bean id="NAction" class="com.ssh.action.NAction" autowire="byType"/>
+    <bean id="TeacherNoticeAction" class="com.ssh.action.TeacherNoticeAction" autowire="byType"/>
+    <bean id="ExamineAction" class="com.ssh.action.ExamineAction" autowire="byType"/>
+    <bean id="GetReaTable" class="com.ssh.action.GetReaTable" autowire="byType"/>
+    <bean id="newReAction" class="com.ssh.action.newReAction" autowire="byType"/>
+    <bean id="changeReAction" class="com.ssh.action.changeReAction" autowire="byType"/>
+    <bean id="researchC" class="com.ssh.action.RowcolReAction" autowire="byType"/>
+    <bean id="ReaUD" class="com.ssh.action.ReaUD" autowire="byType"/>
+    <bean id="GetSerTable" class="com.ssh.action.GetSerTable" autowire="byType"/>
+    <bean id="newSerAction" class="com.ssh.action.newSerAction" autowire="byType"/>
+    <bean id="changeSerAction" class="com.ssh.action.changeSerAction" autowire="byType"/> 
+    <bean id="serveC" class="com.ssh.action.RowcolSerAction" autowire="byType"/>
+    <bean id="SerUD" class="com.ssh.action.SerUD" autowire="byType"/>
+    <bean id="GetAssTable" class="com.ssh.action.GetAssTable" autowire="byType"/>
+    <bean id="newAssAction" class="com.ssh.action.newAssAction" autowire="byType"/>
+    <bean id="changeAssAction" class="com.ssh.action.changeAssAction" autowire="byType"/>
+    <bean id="assistantC" class="com.ssh.action.RowcolAssAction" autowire="byType"/>
+    <bean id="AssUD" class="com.ssh.action.AssUD" autowire="byType"/>
+    <bean id="QualityAction" class="com.ssh.action.QualityAction" autowire="byType"/>
+    <bean id="TurnQ" class="com.ssh.action.TurnQ" autowire="byType"/>
+    <bean id="ScoreDownload" class="com.ssh.action.ScoreDownload" autowire="byType"/>
+    <bean id="EAction" class="com.ssh.action.EAction" autowire="byType"/>
+    <bean id="BackTAction" class="com.ssh.action.BackTAction" autowire="byType"/>
+    <bean id="SSAction" class="com.ssh.action.SSAction" autowire="byType"/>
+    <bean id="PasswordM" class="com.ssh.action.PasswordM" autowire="byType" scope="prototype"/>
+    <bean id="PasswordUpdateAction" class="com.ssh.action.PasswordUpdateAction" autowire="byType" scope="prototype"/>
+    <bean id="QUITAction" class="com.ssh.action.QUIT" autowire="byType"/>
+</beans>

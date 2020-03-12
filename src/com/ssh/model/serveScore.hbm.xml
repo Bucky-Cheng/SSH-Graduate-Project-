@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.ssh.model.serveScore" table="servescore">
+    		<id name="ID" column="ID">
+    		<!-- 配置的是自动增长标识列 -->
+    		<generator class="native" /> 
+    		</id> 
+    		<property name="TeacherID" />
+    		<property name="TeacherName" />
+    		<property name="s0" />
+    		<property name="s1c" />
+    		<property name="s1s" />
+    		<property name="s2c" />
+    		<property name="s2s" />
+    		<property name="s3c" />
+    		<property name="s3s" />
+    		<property name="s4c" />
+    		<property name="s4s" />
+    		<property name="s5c" />
+    		<property name="s5s" />
+    		<property name="a0" />
+    		<property name="a1c" />
+    		<property name="a1s" />
+    		<property name="b0" />
+    		<property name="b1c" />
+    		<property name="b1s" />
+    		<property name="b2c" />
+    		<property name="b2s" />
+    		<property name="b3c" />
+    		<property name="b3s" />
+    		<property name="b4c" />
+    		<property name="b4s" />
+    		<property name="c0" />
+    		<property name="c1c" />
+    		<property name="c1s" />
+    		<property name="d0" />
+    		<property name="d1c" />
+    		<property name="d1s" />
+    		<property name="d2c" />
+    		<property name="d2s" />
+    		<property name="d3c" />
+    		<property name="d3s" />
+    		<property name="e0" />
+    		<property name="e1c" />
+    		<property name="e1s" />
+    		<property name="e2c" />
+    		<property name="e2s" />
+    		<property name="e3c" />
+    		<property name="e3s" />
+    		<property name="f0" />
+    		<property name="f1c" />
+    		<property name="f1s" />
+    		<property name="g0" />
+    		<property name="g1c" />
+    		<property name="g1s" />
+    		<property name="h0" />
+    		<property name="h1c" />
+    		<property name="h1s" />
+    		
+    		
+    		
+    	</class>
+    </hibernate-mapping>

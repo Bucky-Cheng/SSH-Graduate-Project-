@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.ssh.model.TeacherInfo" table="TeacherInfo">
+    		<id name="ID" column="ID">
+    		<!-- 配置的是自动增长标识列 -->
+    		<generator class="native" /> 
+    		</id> 
+    		<property name="TeacherName" />
+    		<property name="TeacherID" />
+    		<property name="TeacherSex" />
+    		<property name="TeacherBirthday" />
+    		<property name="Department" />
+    		<property name="Programme" />
+    		<property name="Notice" />
+    	</class>
+    </hibernate-mapping>

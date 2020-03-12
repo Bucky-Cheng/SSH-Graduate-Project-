@@ -1,0 +1,179 @@
+body{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;  
+}
+body a{ 
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+	text-decoration:none;
+	outline:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a:focus {
+	text-decoration:none;
+	outline: none;
+} 
+/*-- banner --*/
+.agileits-banner {
+	background:url(../images/bg.jpg)no-repeat center 0px;
+	-webkit-background-size:cover;
+	background-size:cover;
+	-moz-background-size:cover;
+	position: relative; 
+} 
+
+/*-- //logo --*/
+/*-- top-nav --*/
+
+/*-- //social-icons --*/
+/*-- banner-text --*/
+.banner-w3text.w3layouts {
+    padding:18em 0;
+}
+.banner-w3text h2 {
+    font-size: 5em;
+    color: #222; 
+    text-align: center;
+}
+.banner-w3text h2 span {
+    font-weight: 900;
+    color: rgba(255, 87, 34, 0.54);
+}
+.banner-w3text  h6 {
+    font-size: 1em;
+    color: #222; 
+    text-align: center;
+    letter-spacing: 5px;
+	font-weight: 700;
+}
+.wthree-bnr-login ul li {
+    display: inline-block;
+    width: 32%;
+}
+.wthree-bnr-login ul li:nth-child(2){
+    margin:0 1.2em;
+}
+.wthree-bnr-login {
+    width: 75%;
+    margin: 3em auto;
+}
+.banner-w3text #a1,.banner-w3text #a2{
+    border: 1px solid #222;
+    font-size: 1em;
+    color: #222;
+    background: none;
+    width: 100%;
+    padding: .8em 1.5em;
+    outline: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px; 
+	-o-border-radius: 35px;
+	-ms-border-radius: 35px;  
+    border-radius: 35px;
+}
+.banner-w3text #a3 {
+    outline: none;
+    color: #fff;
+    padding: .8em 0;
+    width: 100%;
+    font-size: 1em; 
+    -webkit-appearance: none;
+    background: #00aec5;
+    border: solid 1px #00aec5;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px; 
+	-o-border-radius: 35px;
+	-ms-border-radius: 35px;  
+    border-radius: 35px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.banner-w3text #a3:hover {
+    background-color: transparent;
+    color: #00aec5;
+    letter-spacing: 5px;
+}
+/*-- //banner-text --*/
+
+
+
+
+/*-- slider-up-arrow --*/
+
+
+/*-- responsive-design --*/ 
+@media(max-width:1366px){
+.wthree-bnr-login ul li { 
+    width: 31%;
+}
+.banner-w3text.w3layouts {
+    padding: 17em 0;
+} 
+} 
+@media(max-width:1080px){
+.w3menu.navbar-left {
+    margin-left: 8em;
+}
+.top-nav ul li a { 
+    padding: 1.3em 1.5em; 
+}
+.banner-w3text.w3layouts {
+    padding: 15em 0;
+}
+.banner-bottom p { 
+    width: 58%; 
+}
+h3.agileits-title {
+    font-size: 3.2em; 
+}
+.agileits_about_right {
+    padding: 0 6em 0 0; 
+}
+.agileits_about_left p.w3l_para {
+    margin: 0 0 2em 0;
+}
+.services-w3grid h5 {
+    font-size: 1.3em;
+    margin: 1em 0 .5em; 
+}
+.agileits_w3layouts_events_grid_social, .agileits_w3layouts_events_grid_social1 { 
+    top: 10%; 
+    right: 3.5%;
+}
+.footer-grids.footer-mdl { 
+    padding: 0 2em;
+}
+.w3l_admin p { 
+    padding-left: 3em; 
+}
+.w3l_admin p i.fa.fa-quote-left {
+    margin-left: -3em;
+    margin-right: 2em;
+}
+.banner-w3text h2 {
+    font-size: 4em; 
+}
+.banner-w3text.w3layouts.aboutw3l-bnrtext {
+    padding: 3em 0;
+}
+
+
+
+/*-- //responsive-design --*/

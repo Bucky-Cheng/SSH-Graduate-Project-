@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+	<struts>
+	<constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.action.excludePattern" value="/assets/.*?"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant> 
+    <constant name="struts.ui.theme" value="simple" />
+     <constant name="struts.multipart.maxSize" value="31457280" />
+    <package name="default" extends="struts-default,json-default" namespace="/">
+    	
+    	<action name="login" class="loginAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">teacher_Home.jsp</result>
+			<result name="Admin">AD_Home.jsp</result>
+			<result name="input">Login.jsp</result>
+		</action>
+		<action name="QUIT" class="QUITAction"> <!-- QUITAction到Spring配置文件中查找 -->
+			<result name="success">Login.jsp</result>
+			
+		</action>
+		<action name="educationTable" class="getEducationAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">educationHome.jsp</result>
+			<result name="input">adEducation.jsp</result>
+			<result name="login">EducationM.jsp</result>
+			<result name="error">Login.jsp</result>
+		</action>
+		<action name="GetReaTable" class="GetReaTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">researchHome.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetAdReaTable" class="GetReaTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">adResearch.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetMReaTable" class="GetReaTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ResearchM.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="EButton" class="GetReaTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">EButton.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="GetSerTable" class="GetSerTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">serveHome.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetAdSerTable" class="GetSerTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">adServe.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetMSerTable" class="GetSerTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ServeM.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetAssTable" class="GetAssTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">assistantHome.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetAdAssTable" class="GetAssTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">adAssistant.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="GetMAssTable" class="GetAssTable"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">AssistantM.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		 <action name="educationC" class="educationC"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">educationC.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="researchC" class="researchC"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">researchC.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="serveC" class="serveC"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">serveC.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="assistantC" class="assistantC"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">assistantC.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="DocumentShow" class="DocumentShow"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ManagerExamine.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+		</action>
+		<action name="DocumentShowAd" class="DocumentShowAd"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">AdExamine.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+		</action>
+		<action name="BackTAction" class="BackTAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">BackT.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="SSAction" class="SSAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ShowScore.jsp</result>
+			<result name="input">teacher_Home.jsp</result>
+			
+		</action>
+		<action name="EduUD" class="EduUD"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">EducationUD.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="ReaUD" class="ReaUD"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ResearchUD.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="PasswordM" class="PasswordM"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">PasswordM.jsp</result>
+			<result name="input">teacher_Home.jsp</result>
+			
+		</action>
+		<action name="passwordUpdateAction" class="PasswordUpdateAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">AD_Home.jsp</result>
+			<result name="input">PasswordAd.jsp</result>
+			
+		</action>
+		<action name="SerUD" class="SerUD"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ServeUD.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="AssUD" class="AssUD"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">AssistantUD.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="ManagerShow" class="ManagerShow"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">Manager.jsp</result>
+			
+			
+		</action>
+		<action name="TeacherM" class="TeacherM"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">TeacherM.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="TurnQ" class="TurnQ"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">QualityM.jsp</result>
+			<result name="input">AD_Home.jsp</result>
+			
+		</action>
+		<action name="NAction" class="NAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">NoticeMain.jsp</result>
+			<result name="input">Login.jsp</result>
+			
+		</action>
+		<action name="TeacherNoticeAction" class="TeacherNoticeAction"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">TeacherNotice.jsp</result>
+			<result name="input">teacher_Home.jsp</result>
+			
+		</action>
+		<action name="ScoreDownload" class="ScoreDownload"> <!-- loginAction到Spring配置文件中查找 -->
+			<result name="success">ScoreDownload.jsp</result>
+			<result name="input">ad_Home.jsp</result>
+			
+		</action>
+		<action name="FileDownload" class="FileDownload">
+			<!-- 配置类型为stream的结果 -->
+			<result name="success" type="stream">
+				<!--  <param name="contentType">application/zip</param>-->
+				
+				<!-- 指定由getTargetFile方法返回被下载文件的InputStream -->
+				<param name="inputName">downLoad</param>
+				<!-- 指定下载文件的文件名 -->
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<!-- 指定下载文件的缓冲大小 -->
+				<param name="bufferSize">20480</param>
+			</result>
+		</action>
+		<action name="AttachmentDownload" class="AttachmentDownload">
+			<!-- 配置类型为stream的结果 -->
+			<result name="success" type="stream">
+				<!--  <param name="contentType">application/zip</param>-->
+				
+				<!-- 指定由getTargetFile方法返回被下载文件的InputStream -->
+				<param name="inputName">downLoad</param>
+				<!-- 指定下载文件的文件名 -->
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<!-- 指定下载文件的缓冲大小 -->
+				<param name="bufferSize">20480</param>
+			</result>
+		</action>
+		<action name="*ExcelAction" method="{1}" class="ExcelAction">
+			<result name="excel" type="stream">
+			    <param name="contentType">application/vnd.ms-excel</param>
+			    <param name="contentDisposition">attachment;filename="${DocName}"</param>
+			    <param name="inputName">excelFile</param>
+			</result>
+			<result  type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		<interceptor-ref name="fileUpload">
+			   <param name="maximumSize">20971520</param>
+		   </interceptor-ref>
+		   <interceptor-ref name="defaultStack" /> 
+		</action>
+		
+		<action name="CEAction" class="CEAction" >	
+		
+		</action>
+		<action name="CRAction" class="changeReAction" >	
+		
+		</action>
+		<action name="CSAction" class="changeSerAction" >	
+		
+		</action>
+		<action name="CAAction" class="changeAssAction" >	
+		
+		</action>
+		<action name="newEduAction" class="newEduAction" >	
+		
+		
+		</action>
+		<action name="newReAction" class="newReAction" >	
+		
+		
+		</action>
+		<action name="newSerAction" class="newSerAction" >	
+		
+		
+		</action>
+		<action name="newAssAction" class="newAssAction" >	
+		
+		
+		</action>
+		<action name="*AjaxAction" method="{1}" class="AjaxAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		<action name="*TeacherAction" method="{1}" class="TeacherAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		<action name="*InfoAction" method="{1}" class="InfoAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*ExamineAction" method="{1}" class="ExamineAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*ManagerAction" method="{1}" class="ManagerAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*ChartAction" method="{1}" class="ChartAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*NoticeAction" method="{1}" class="NoticeAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*QualityAction" method="{1}" class="QualityAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*EAction" method="{1}" class="EAction">
+		<result type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		</action>
+		
+		<action name="*FileUpload" method="{1}" class="FileUpload">
+		<result  type="json">
+		<param name="root">
+		result
+		</param>
+		</result>
+		<interceptor-ref name="fileUpload">
+			   <param name="maximumSize">20971520</param>
+		   </interceptor-ref>
+		   <interceptor-ref name="defaultStack" /> 
+ 		</action>
+    </package>
+	</struts>
